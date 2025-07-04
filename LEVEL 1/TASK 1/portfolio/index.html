@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DHASHUBHAN KUMAR | Fullstack Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+      background: linear-gradient(135deg, #111 25%, #333 75%);
+      border-radius: 50%;
+      animation: pulse 3s infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 0 20px #fff2;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .project {
+      background: #111;
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 4px solid white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #111;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    input, textarea {
+      background: #000;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: 1px solid #fff;
+      background: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="avatar">AI</div>
+    <h1>DHASHUBHAN KUMAR</h1>
+    <p>Fullstack Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m DHASHUBHAN KUMAR, a passionate Fullstack Developer experienced in building scalable web applications using modern technologies like React, Node.js, Express, and MongoDB. I love creating clean, efficient code and solving challenging problems.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A minimalist black & white themed single-page portfolio with an AI avatar built using only HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="project">
+      <h3>Chat App</h3>
+      <p>Real-time chat application using Socket.io and Express with JWT-based authentication and MongoDB backend.</p>
+    </div>
+
+    <!-- Add more projects as needed -->
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DHASHUBHAN KUMAR. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you! Your message has been sent (not really, it's a static site).");
+    }
+  </script>
+</body>
+</html>
